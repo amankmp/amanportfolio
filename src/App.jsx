@@ -77,7 +77,7 @@ function Home() {
         <nav className="nav">
           <a className="logo" href="#top">AMAN<span>.</span></a>
           <div className="nav-links">
-            <a href="#papapet">Papapet</a><a href="#creative">Creative</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a>
+            <a href="#papapet">Papapet</a><a href="#devcon">Devcon</a><a href="#creative">Creative</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a>
           </div>
           <a className="nav-available" href="mailto:ap7612394@gmail.com"><span/> Available</a>
         </nav>
@@ -111,30 +111,49 @@ function Home() {
         <div className="role-strip reveal"><div><span>MY ROLE</span><strong>Social Media Manager & Video Editor</strong></div><div><span>FOCUS</span><strong>Content · Campaigns · Growth</strong></div><div><span>BRAND</span><strong>Papapet</strong></div></div>
       </section>
 
+      <section id="devcon" className="devcon-section section-pad">
+        <div className="section-head reveal"><div><span className="section-kicker">02 — DEVCON 8 · MUMBAI</span><h2>Show up. Pitch in.<br/><em>Find your people.</em></h2></div><p>A volunteer shift at the Swag Station became a chance to meet people building across the Web3 ecosystem.</p></div>
+        <div className="devcon-story reveal">
+          <div className="devcon-copy">
+            <span className="devcon-overline"><i/> VOLUNTEER · SWAG STATION</span>
+            <h3>A little behind the scenes.<br/><span>A lot of community.</span></h3>
+            <p>I completed a volunteer shift at the Swag Station during Devcon 8 in Mumbai. Between helping out and meeting people from across Web3, I got to experience the energy of the ecosystem up close.</p>
+            <div className="devcon-tags"><span>WEB3 ECOSYSTEM</span><span>COMMUNITY</span><span>VOLUNTEERING</span></div>
+          </div>
+          <div className="devcon-mark" aria-hidden="true"><div className="devcon-diamond"><span>DC</span></div><i className="devcon-orbit orbit-a"/><i className="devcon-orbit orbit-b"/><small>MUMBAI · INDIA</small></div>
+        </div>
+        <div className="devcon-gallery" aria-label="Photos from Devcon 8 Mumbai">
+          <figure className="devcon-photo devcon-photo-feature reveal"><img src="/devcon-volunteer-swag.jpg" alt="Aman at Devcon 8 beside the event swag display" loading="lazy"/><figcaption><span>01 / ON SHIFT</span><strong>Swag Station</strong></figcaption></figure>
+          <figure className="devcon-photo reveal delay-1"><img src="/devcon-volunteer-community.jpg" alt="Aman with another attendee at the Devcon 8 venue" loading="lazy"/><figcaption><span>02 / MEET THE COMMUNITY</span><strong>Web3, in person</strong></figcaption></figure>
+          <figure className="devcon-photo reveal"><img src="/devcon-volunteer-team.jpg" alt="Aman with fellow volunteers at Devcon 8" loading="lazy"/><figcaption><span>03 / VOLUNTEER CREW</span><strong>Better together</strong></figcaption></figure>
+          <figure className="devcon-photo reveal delay-1"><img src="/devcon-volunteer-connections.jpg" alt="Aman with a fellow Devcon 8 attendee" loading="lazy"/><figcaption><span>04 / NEW CONNECTIONS</span><strong>Across the ecosystem</strong></figcaption></figure>
+        </div>
+      </section>
+
       <section id="creative" className="creative-section section-pad">
-        <div className="section-head reveal"><div><span className="section-kicker">02 — VIDEO EDITING & GRAPHICS</span><h2>Visual work, made to be seen.</h2></div><p>Video edits, YouTube work, thumbnails and campaign graphics shown as a visual reference of what I can create.</p></div>
+        <div className="section-head reveal"><div><span className="section-kicker">03 — VIDEO EDITING & GRAPHICS</span><h2>Visual work, made to be seen.</h2></div><p>Video edits, YouTube work, thumbnails and campaign graphics shown as a visual reference of what I can create.</p></div>
         <div className="creative-feature reveal"><div><span className="creative-index">VIDEO EDITING</span><h3>From raw footage to a finished story.</h3><p>Pacing, storytelling, sound, motion and visual composition — built for digital content.</p></div><div className="creative-stat"><strong>06+</strong><span>video pieces & published edits</span></div></div>
         <div className="video-grid">
           <article className="media-card reveal"><div className="media-frame video-frame"><video controls preload="metadata" poster="/videos/video-edit-01.jpg"><source src="/videos/video-edit-01.mp4" type="video/mp4"/></video><span className="media-badge">VIDEO EDIT</span></div><div className="media-info"><div><span>VIDEO 01</span><h3>Vertical edit</h3></div><span>↗</span></div></article>
           <article className="media-card reveal delay-1"><div className="media-frame video-frame landscape-frame"><video controls preload="metadata" poster="/videos/video-edit-02.jpg"><source src="/videos/video-edit-02.mp4" type="video/mp4"/></video><span className="media-badge">VIDEO EDIT</span></div><div className="media-info"><div><span>VIDEO 02</span><h3>Story edit</h3></div><span>↗</span></div></article>
         </div>
-        <div className="creative-subhead reveal"><div><span className="section-kicker">02A — YOUTUBE</span><h3>Published edits.</h3></div><span>PLAY DIRECTLY ON THE SITE</span></div>
+        <div className="creative-subhead reveal"><div><span className="section-kicker">03A — YOUTUBE</span><h3>Published edits.</h3></div><span>PLAY DIRECTLY ON THE SITE</span></div>
         <div className="youtube-grid">{[["qFVhlYqKSSo","YouTube Edit 01"],["h9SIsLDXuWM","YouTube Edit 02"],["HISqQGMXAcY","YouTube Edit 03"],["dqZKnG9xwkA","YouTube Edit 04"]].map(([id,title],i)=><article className="media-card reveal" key={id}><div className="media-frame youtube-frame"><iframe src={`https://www.youtube.com/embed/${id}`} title={title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/></div><div className="media-info"><div><span>YOUTUBE / 0{i+1}</span><h3>{title}</h3></div><a href={`https://youtu.be/${id}`} target="_blank" rel="noreferrer">↗</a></div></article>)}</div>
-        <div className="creative-subhead reveal"><div><span className="section-kicker">02B — GRAPHICS & CAMPAIGNS</span><h3>Work references.</h3></div><span>INCLUDING PAPAPET CAMPAIGN WORK</span></div>
+        <div className="creative-subhead reveal"><div><span className="section-kicker">03B — GRAPHICS & CAMPAIGNS</span><h3>Work references.</h3></div><span>INCLUDING PAPAPET CAMPAIGN WORK</span></div>
         <div className="graphics-grid">{[...pawfumeWorks,...creativeWorks].map(([src,title,type],i)=><button className="graphic-card reveal" key={src} type="button" onClick={()=>window.open(src,"_blank")}><img src={src} alt={title} loading="lazy"/><span className="graphic-overlay"><small>{type}</small><strong>{title}</strong><i>↗</i></span></button>)}</div>
       </section>
 
       <section id="projects" className="projects-section section-pad">
-        <div className="section-head reveal"><div><span className="section-kicker">03 — DEVELOPMENT PROJECTS</span><h2>Things I've built.</h2></div><p>Development work, separated from the creative portfolio. Click a project to open its GitHub.</p></div>
+        <div className="section-head reveal"><div><span className="section-kicker">04 — DEVELOPMENT PROJECTS</span><h2>Things I've built.</h2></div><p>Development work, separated from the creative portfolio. Click a project to open its GitHub.</p></div>
         <div className="dev-grid">
           <a className="dev-card reveal" href={sakshamPath} target="_blank" rel="noreferrer"><div className="dev-top"><span>01</span><span>AI · CAREER PLATFORM</span></div><ProjectArt type="saksham"/><div className="dev-info"><h3>SakshamPath</h3><p>An AI-assisted platform designed to help students discover skills, build a learning path, create resumes and find relevant jobs.</p><div className="tag-row"><span>React</span><span>AI</span><span>APIs</span><span>GitHub ↗</span></div></div></a>
           <a className="dev-card reveal delay-1" href={civicSense} target="_blank" rel="noreferrer"><div className="dev-top"><span>02</span><span>AI · CIVIC TECH</span></div><ProjectArt type="civic"/><div className="dev-info"><h3>Civic Sense</h3><p>A civic-tech concept focused on pothole detection, issue reporting and latitude/longitude-based mapping of reported problems.</p><div className="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI</span><span>GitHub ↗</span></div></div></a>
         </div>
       </section>
 
-      <section id="about" className="about-section section-pad"><div className="section-head reveal"><div><span className="section-kicker">04 — ABOUT ME</span><h2>Code, ideas & a little chaos.</h2></div></div><div className="about-grid"><div className="about-big reveal"><div className="about-gradient"/><span>AP</span><p>DEVELOPER<br/>CREATOR<br/>EXPLORER</p></div><div className="about-copy reveal delay-1"><p className="large-copy">I enjoy working at the intersection of <strong>technology and creativity.</strong></p><p>From AI-powered products and Web3 experiments to social content, video editing and digital marketing, I like learning by making things.</p><p>I'm interested in practical products, strong visual communication and experiences that feel simple to the person using them.</p></div></div></section>
-      <section id="skills" className="skills-section section-pad"><div className="section-head reveal"><div><span className="section-kicker">05 — TOOLKIT</span><h2>What I work with.</h2></div></div><div className="skills-cloud reveal">{["HTML","CSS","JavaScript","React","Java","Git","GitHub","AI APIs","Web3","Blockchain","Smart Contracts","Video Editing","Content","Digital Marketing"].map((skill,i)=><span className={`skill-pill p${i%5}`} key={skill}>{skill}</span>)}</div></section>
-      <section id="contact" className="contact-section section-pad reveal"><p className="section-kicker">06 — CONTACT</p><h2>Have an idea?<br/><span>Let's make it real.</span></h2><a className="contact-email" href="mailto:ap7612394@gmail.com">ap7612394@gmail.com ↗</a><div className="contact-links"><a href={github} target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/aman-patel-4027812b0/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:ap7612394@gmail.com">Email ↗</a></div></section>
+      <section id="about" className="about-section section-pad"><div className="section-head reveal"><div><span className="section-kicker">05 — ABOUT ME</span><h2>Code, ideas & a little chaos.</h2></div></div><div className="about-grid"><div className="about-big reveal"><div className="about-gradient"/><span>AP</span><p>DEVELOPER<br/>CREATOR<br/>EXPLORER</p></div><div className="about-copy reveal delay-1"><p className="large-copy">I enjoy working at the intersection of <strong>technology and creativity.</strong></p><p>From AI-powered products and Web3 experiments to social content, video editing and digital marketing, I like learning by making things.</p><p>I'm interested in practical products, strong visual communication and experiences that feel simple to the person using them.</p></div></div></section>
+      <section id="skills" className="skills-section section-pad"><div className="section-head reveal"><div><span className="section-kicker">06 — TOOLKIT</span><h2>What I work with.</h2></div></div><div className="skills-cloud reveal">{["HTML","CSS","JavaScript","React","Java","Git","GitHub","AI APIs","Web3","Blockchain","Smart Contracts","Video Editing","Content","Digital Marketing"].map((skill,i)=><span className={`skill-pill p${i%5}`} key={skill}>{skill}</span>)}</div></section>
+      <section id="contact" className="contact-section section-pad reveal"><p className="section-kicker">07 — CONTACT</p><h2>Have an idea?<br/><span>Let's make it real.</span></h2><a className="contact-email" href="mailto:ap7612394@gmail.com">ap7612394@gmail.com ↗</a><div className="contact-links"><a href={github} target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/aman-patel-4027812b0/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:ap7612394@gmail.com">Email ↗</a></div></section>
       <footer><span>© 2026 AMAN PATEL</span><span>BUILT WITH REACT · MADE WITH CURIOSITY</span></footer>
     </main>
   );
